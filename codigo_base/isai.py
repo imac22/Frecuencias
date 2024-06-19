@@ -1,5 +1,3 @@
-arreglo= [0, 5, 7, 6, 4, 2 ]
-
 def ordenar_asc(arreglo):
 
     fa_sorted = []    
