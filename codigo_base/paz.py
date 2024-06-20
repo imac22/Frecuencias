@@ -1,5 +1,5 @@
+import matplotlib.pyplot as plt
 def plot_barras(marcas_clase, frecuencias, marcas_texto):
-        import matplotlib.pyplot as plt
 
         plt.figure(figsize=(12, 6))  # Ancho, Alto del gráfico
 
