@@ -1,5 +1,13 @@
-def clases_str_sort(clases):
-    arreglo = clases
+def clases_str_sort(arreglo):
+    '''
+    Regresa el arreglo ordenado de forma
+    ascendente.
+    
+    Ejemplo:
+    arreglo = [0, 5, 7, 6, 4, 2]
+    arr_sorted = ordenar_asc(arreglo)
+    >>> [0, 2, 4, 5, 6, 7]
+    '''
     arr_len = len(arreglo)
 
     for i in range(arr_len):
