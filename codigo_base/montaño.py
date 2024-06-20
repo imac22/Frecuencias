@@ -1,4 +1,4 @@
-def plot_poligono(clases, fa_sorted,marcas_texto, labelx, labely, titulo, cls):
+def plot_poligono(clases, fa_sorted,marcas_texto, labelx, labely, titulo):
     import matplotlib.pyplot as plt
 
 # Datos
@@ -6,7 +6,7 @@ def plot_poligono(clases, fa_sorted,marcas_texto, labelx, labely, titulo, cls):
 
 
     # Ajustes para el graficado del polígono
-    datos_x = [0] + clases + [cls]
+    datos_x = [0] + clases + [len(clases) + 1]
     datos_y = [0] + fa_sorted + [0]
 
     plt.plot(datos_x, datos_y, 
