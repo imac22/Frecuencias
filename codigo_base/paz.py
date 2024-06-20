@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-def plot_barras(clases, fa_sorted,marcas_texto):
+def plot_barras(clases, fa_sorted,marcas_texto, labelx, labely, titulo):
 
         plt.figure(figsize=(12, 6))  # Ancho, Alto del gráfico
 
@@ -12,9 +12,9 @@ def plot_barras(clases, fa_sorted,marcas_texto):
                 color=["#33FFBE", "#333CFF", "#FF3349", "#F6FF33", "#333CFF", "#33FFBE"])
 
         plt.yticks(clases, marcas_texto, fontsize=12, rotation=45)
-        plt.xlabel("Frecuencia absoluta", fontsize=15)  # Etiqueta del eje x
-        plt.ylabel("Marcas de clase", fontsize=15)  # Etiqueta del eje y
-        plt.title("Diagrama de barras", fontsize=20)  # Etiqueta del título
+        plt.xlabel(labelx, fontsize=15)  # Etiqueta del eje x
+        plt.ylabel(labely, fontsize=15)  # Etiqueta del eje y
+        plt.title(titulo, fontsize=20)  # Etiqueta del título
         plt.grid()  # Activar cuadrícula
         plt.show()  # Mostrar gráfico
 

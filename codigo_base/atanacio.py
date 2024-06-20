@@ -1,4 +1,4 @@
-def plot_ojiva(clases, fr_acum, marcas_texto):
+def plot_ojiva(clases, fr_acum, marcas_texto, labelx, labely, titulo):
 
     import matplotlib.pyplot as plt
 
@@ -22,9 +22,9 @@ def plot_ojiva(clases, fr_acum, marcas_texto):
             marker="v", markersize=10, markerfacecolor="y", markeredgecolor="r")
 
     plt.xticks(clases, marcas_texto, fontsize=15, rotation=0)
-    plt.xlabel("Marcas de clase", fontsize=25)  # Etiqueta del eje x
-    plt.ylabel("Frecuencia acumulada", fontsize=25)  # Etiqueta del eje y
-    plt.title("Ojiva", fontsize=40)  # Etiqueta del título
+    plt.xlabel(labelx, fontsize=25)  # Etiqueta del eje x
+    plt.ylabel(labely, fontsize=25)  # Etiqueta del eje y
+    plt.title(titulo, fontsize=40)  # Etiqueta del título
     plt.grid()  # Activar cuadrícula
     plt.show()  # Mostrar gráfico
 
