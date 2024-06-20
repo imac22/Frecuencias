@@ -1,6 +1,6 @@
 def format_list(datos):
     lista = []
     for dato in datos:
-       datos = (datos.upper())
+        lista.append(dato.strip().lower())
     
-    return datos
+    return lista
