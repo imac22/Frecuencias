@@ -1,11 +1,8 @@
-def obtener_fr(arreglo):
-  """
-  Función para obtener la frecuencia relativa de los elementos en un arreglo.
-  """
-  # Calcular la frecuencia relativa para cada elemento
-    
-  frecuencia_relativa = []
-  for elemento in arreglo:
+def obtener_fr(fa):
+
+  fr = []
+  for elemento in fa:
       
-    frecuencia_relativa.append(elemento / sum(arreglo)*100)
-  return frecuencia_relativa
+    fr.append(elemento / sum(fa)*100)
+      
+  return fr

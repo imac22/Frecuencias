@@ -1,7 +1,11 @@
 def obtener_fa(fr):
-    frecuencias_acumuladas = []
+    
+    fa = []
     suma = 0
+    
     for elemento in fr:
+        
         suma += elemento
-        frecuencias_acumuladas.append(suma)
-    return frecuencias_acumuladas
+        fa.append(suma)
+        
+    return fa
