@@ -1,4 +1,5 @@
 def fa_grouped(datos, lim_inf, lim_sup):
+
     fa = [0] * len(lim_inf)
     
     clases = [0] * len(lim_inf)
